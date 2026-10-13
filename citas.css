@@ -1,0 +1,288 @@
+@import url("./base.css");
+
+/* Encabezado */
+.cabeceraCitas {
+    background-color: #FFFFFF;
+    padding: 50px 0 40px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 40px;
+    color: var(--azul);
+    margin-bottom: 12px;
+}
+
+.parrafo {
+    font-size: 17px;
+    color: var(--gris);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* Sección principal de citas */
+.seccionCitas {
+    padding: 50px 0 80px;
+    background-color: var(--seccion);
+}
+
+.cuadrilatero {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.ladoIzq {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ladoDer {
+    flex: 1.4;
+}
+
+/* Tarjetas blancas */
+.cajaInfo,
+.cajaVentajas,
+.formulario {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(7, 87, 158, 0.08);
+}
+
+/* Lado izquierdo: alerta de urgencias */
+.cajaAlerta {
+    background-color: #FFF3F3;
+    border: 2px solid var(--rojo);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(230, 57, 70, 0.12);
+}
+
+.cajaAlerta h3 {
+    color: var(--rojo);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.cajaAlerta p {
+    font-size: 15px;
+    color: #551E1E;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.botonLlamar {
+    display: block;
+    text-align: center;
+    background-color: var(--rojo);
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+}
+
+.botonLlamar:hover {
+    background-color: #c92a37;
+}
+
+.notaUrgencia {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #7A3232;
+}
+
+/* Lado izquierdo: horarios */
+.cajaInfo {
+    padding: 28px;
+}
+
+.cajaInfo h3 {
+    color: var(--azul);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.listaHorarios li {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.separador {
+    height: 1px;
+    background-color: var(--borde);
+    margin: 18px 0;
+}
+
+.textoGris {
+    font-size: 14px;
+    color: var(--gris);
+    margin-bottom: 6px;
+}
+
+/* Lado izquierdo: ventajas */
+.cajaVentajas {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.itemVentaja {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.itemVentaja strong {
+    font-size: 15px;
+    color: var(--azul);
+}
+
+.itemVentaja p {
+    font-size: 14px;
+    color: var(--gris);
+}
+
+/* Lado derecho: formulario */
+.formulario {
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 12px 32px rgba(7, 87, 158, 0.1);
+}
+
+.subtituloForm {
+    font-size: 27px;
+    color: var(--azul);
+    margin-bottom: 4px;
+}
+
+.descForm {
+    font-size: 15px;
+    color: var(--gris);
+    margin-bottom: 24px;
+}
+
+/* Bloques del formulario */
+.bloque {
+    background-color: #FAFDFD;
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tituloBloque {
+    font-size: 17px;
+    color: var(--turquesa);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--borde);
+}
+
+/* Filas y campos */
+.fila {
+    display: flex;
+    gap: 0 16px;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid var(--borde);
+    border-radius: 8px;
+    font: 15px 'Inter', sans-serif;
+    color: var(--texto);
+    background-color: #FFFFFF;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--turquesa);
+    box-shadow: 0 0 0 3px rgba(16, 175, 168, 0.15);
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campoTerminos {
+    margin: 18px 0 22px;
+    font-size: 14px;
+    color: var(--gris);
+}
+
+.campoTerminos input {
+    margin-right: 8px;
+}
+
+/* Botón de enviar */
+.botonConfirmar {
+    width: 100%;
+    background-color: var(--dorado);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(245, 181, 68, 0.35);
+}
+
+.botonConfirmar:hover {
+    background-color: var(--dorado-hover);
+    box-shadow: 0 8px 25px rgba(245, 181, 68, 0.5);
+}
+
+.notaFinal {
+    text-align: center;
+    font-size: 13px;
+    color: var(--gris);
+    margin-top: 12px;
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+    .cuadrilatero {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Celulares */
+@media (max-width: 767px) {
+    .formulario {
+        padding: 22px 16px;
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+}

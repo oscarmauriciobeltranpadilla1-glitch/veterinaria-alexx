@@ -1,44 +1,561 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria</title>
+    <title>Patas Felices | Clínica Veterinaria</title>
+
+    <!-- Fuentes de Google -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <div>
-        <div class="sec1">
-            <img src="https://i.ibb.co/jSz5K1s/35221-removebg-preview.png" alt="35221 removebg preview" border="0">
-            <div>
-                <ul class="menu-principal">
-                    <li><a href="#">Inicio</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Servicios</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Consulta general</a></li>
-                            <li><a href="#">Vacunación</a></li>
-                            <li><a href="#">Esterilización</a></li>
-                            <li><a href="#">Urgencias</a></li>
-                            <li><a href="#">Peluquería</a></li>
-                            <li><a href="#">Hospitalización</a></li>
-                            <li><a href="#">Laboratiro</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+
+    <!-- Barra de navegación -->
+    <div class="barra">
+        <div class="barraContenido">
+            <a href="index.html" class="logo">
+                <img src="./assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogo">
+                <div class="textoLogo">
+                    <span class="nombreLogo">Patas Felices</span>
+                    <span class="esloganLogo">Su bienestar, nuestra prioridad</span>
+                </div>
+            </a>
+
+            <!-- Botón del menú en celular -->
+            <input type="checkbox" id="menu" class="menuCheck">
+            <label for="menu" class="hamburguesa" aria-label="Abrir menú">☰</label>
+
+            <div class="links">
+                <a href="index.html" class="activo">Inicio</a>
+
+                <!-- Submenú de servicios -->
+                <div class="submenu">
+                    <a href="servicios.html">Servicios ▾</a>
+                    <div class="submenuLista">
+                        <a href="servicios.html#consulta">Consulta General</a>
+                        <a href="servicios.html#vacunacion">Vacunación</a>
+                        <a href="servicios.html#esterilizacion">Esterilización</a>
+                        <a href="servicios.html#cirugia">Cirugía</a>
+                        <a href="servicios.html#urgencias">Urgencias 24h</a>
+                        <a href="servicios.html#peluqueria">Peluquería</a>
+                        <a href="servicios.html#hospitalizacion">Hospitalización</a>
+                        <a href="servicios.html#laboratorio">Laboratorio</a>
+                    </div>
+                </div>
+
+                <a href="nosotros.html">Nosotros</a>
+                <a href="nosotros.html#adopta">Adopta</a>
+                <a href="citas.html">Agendar Cita</a>
             </div>
-            <div>
-                <button>
-                    Agendar cita
-                </button>
-            </div>
-        </div>
-        <div class = sec2>
-<div>
-</div>
+
+            <!-- Botón de urgencias -->
+            <a href="tel:+573001234567" class="botonUrgencias">
+                <span class="puntoRojo"></span>
+                <span class="textoUrgencia">
+                    <small>Urgencias 24h</small>
+                    <strong>(300) 123-4567</strong>
+                </span>
+            </a>
         </div>
     </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="contenedor heroContenido">
+
+            <div class="ladoIzq">
+                <span class="etiqueta">Clínica Veterinaria & Especialidades</span>
+                <h1 class="tituloHero">
+                    Tranquilidad para ti, <span>salud y amor</span> para tu mascota.
+                </h1>
+                <p class="parrafoHero">
+                    Liderados por la Dra. Andrea Castillo con más de 10 años de experiencia médica. Brindamos atención
+                    integral para perros, gatos y mascotas exóticas en un entorno cálido, profesional y sin estrés.
+                </p>
+
+                <div class="botones">
+                    <a href="citas.html" class="boton">Agendar Cita Médica</a>
+                    <a href="servicios.html" class="botonSecundario">Explorar Servicios</a>
+                </div>
+
+                <div class="cajaDatos">
+                    <div class="dato">
+                        <strong>10+ Años</strong>
+                        <span>de experiencia</span>
+                    </div>
+                    <div class="linea"></div>
+                    <div class="dato">
+                        <strong>24/7</strong>
+                        <span>Urgencias activas</span>
+                    </div>
+                    <div class="linea"></div>
+                    <div class="dato">
+                        <strong>Perros, Gatos & Exóticos</strong>
+                        <span>Atención especializada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoDer">
+                <div class="cajaFotoHero">
+
+                    <!-- Video del hero (sin sonido, se repite) -->
+                    <video class="fotoHero" autoplay muted loop playsinline poster="./assets/img/Imagen1.jfif">
+                        <source src="./assets/img/hero.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Tarjetas flotantes -->
+                <div class="insignia insigniaArriba">
+                    <span class="iconoInsignia">⭐</span>
+                    <div>
+                        <strong>4.9 / 5.0</strong>
+                        <small>+2,500 Familias felices</small>
+                    </div>
+                </div>
+
+                <div class="insignia insigniaAbajo">
+                    <span class="iconoInsignia">🐾</span>
+                    <div>
+                        <strong>Atención Sin Estrés</strong>
+                        <small>Cuidado compasivo y profesional</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Diferenciales -->
+    <div class="diferenciales">
+        <div class="contenedor cajasDiferenciales">
+            <div class="cajaDiferencial">
+                <div class="icono">🩺</div>
+                <div>
+                    <h3>Diagnóstico Preciso</h3>
+                    <p>Laboratorio clínico propio y equipos modernos para resultados rápidos.</p>
+                </div>
+            </div>
+            <div class="cajaDiferencial">
+                <div class="icono">🐇</div>
+                <div>
+                    <h3>Mascotas Exóticas</h3>
+                    <p>Especialistas capacitados en conejos, aves, roedores y más.</p>
+                </div>
+            </div>
+            <div class="cajaDiferencial">
+                <div class="icono">🏥</div>
+                <div>
+                    <h3>Quirófano & Urgencias</h3>
+                    <p>Monitoreo continuo las 24 horas del día ante cualquier emergencia.</p>
+                </div>
+            </div>
+            <div class="cajaDiferencial">
+                <div class="icono">❤️</div>
+                <div>
+                    <h3>Trato Cercano y Humano</h3>
+                    <p>Cuidamos a tus compañeros de vida con el mismo amor de familia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="servicios">
+        <div class="contenedor">
+            <div class="cabeceraSeccion">
+                <span class="etiqueta">Nuestras Especialidades</span>
+                <h2 class="tituloSeccion">Servicios Médicos Diseñados para su Bienestar</h2>
+                <p class="subtituloSeccion">Ofrecemos cobertura completa para la salud preventiva, diagnóstica y
+                    quirúrgica de tu mascota.</p>
+            </div>
+
+            <div class="cajasServicios">
+
+                <div class="tarjetaServicio">
+                    <div class="cajaFoto">
+                        <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=600&q=80"
+                            alt="Consulta General">
+                        <span class="badge">Esencial</span>
+                    </div>
+                    <div class="infoTarjeta">
+                        <h3>Consulta General</h3>
+                        <p>Evaluación física minuciosa, prevención y diagnóstico temprano para garantizar años de vida
+                            saludable.</p>
+                        <a href="servicios.html#consulta" class="enlace">Conocer más →</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaServicio">
+                    <div class="cajaFoto">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80"
+                            alt="Vacunación">
+                        <span class="badge">Preventivo</span>
+                    </div>
+                    <div class="infoTarjeta">
+                        <h3>Vacunación & Desparasitación</h3>
+                        <p>Planes biológicos personalizados según la edad, especie y estilo de vida de tu mascota.</p>
+                        <a href="servicios.html#vacunacion" class="enlace">Conocer más →</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaServicio">
+                    <div class="cajaFoto">
+                        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80"
+                            alt="Urgencias">
+                        <span class="badge badgeRojo">24 Horas</span>
+                    </div>
+                    <div class="infoTarjeta">
+                        <h3>Urgencias Médicas 24h</h3>
+                        <p>Equipo médico siempre de guardia preparado para estabilización crítica y cuidados intensivos.
+                        </p>
+                        <a href="servicios.html#urgencias" class="enlace">Conocer más →</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaServicio">
+                    <div class="cajaFoto">
+                        <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&q=80"
+                            alt="Exóticos">
+                        <span class="badge">Especialidad</span>
+                    </div>
+                    <div class="infoTarjeta">
+                        <h3>Especialidad en Exóticos</h3>
+                        <p>Instalaciones y protocolos adaptados para conejos, cobayas, hámsters y aves de compañía.</p>
+                        <a href="servicios.html" class="enlace">Conocer más →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cajaAviso">
+                <p>¿Buscas cirugías, peluquería, hospitalización o exámenes de laboratorio?</p>
+                <a href="servicios.html" class="boton">Ver los 8 Servicios y Galería Multimedia</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner de urgencias -->
+    <div class="urgencias">
+        <div class="contenedor urgenciasFlex">
+            <div class="ladoIzq">
+                <span class="etiquetaRoja">🚨 Línea de Emergencia Inmediata</span>
+                <h2>¿Tu mascota necesita atención urgente en este momento?</h2>
+                <p>Contamos con personal médico, sala de choque y oxígeno disponibles las 24 horas del día. No necesitas
+                    cita previa para emergencias.</p>
+            </div>
+            <div class="ladoDer">
+                <a href="tel:+573001234567" class="botonLlamar">
+                    📞 Llamar al (300) 123-4567
+                </a>
+                <span class="notaUrgencia">Sede Principal: Calle 45 # 18-32 • Disponible 24/7</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre la doctora -->
+    <div class="quienEs">
+        <div class="contenedor quienEsFlex">
+            <div class="ladoIzq">
+                <img src="./assets/img/Equipo1.jfif" alt="Dra. Andrea Castillo" class="fotoDoctora">
+                <div class="fraseDoctora">
+                    <p>"Aquí tratamos a cada mascota con la misma dedicación y ternura que si fuera nuestra."</p>
+                    <strong>— Dra. Andrea Castillo</strong>
+                </div>
+            </div>
+
+            <div class="ladoDer">
+                <span class="etiqueta">Nuestra Filosofía</span>
+                <h2 class="tituloSeccion">Medicina Veterinaria con Rigor Científico y Empatía</h2>
+                <p class="parrafo">
+                    Fundada por la <strong>Dra. Andrea Castillo</strong>, médica veterinaria con más de una década de
+                    experiencia clínica, Patas Felices nació con el propósito de ofrecer a los dueños un espacio de
+                    absoluta tranquilidad y transparencia médica.
+                </p>
+                <p class="parrafo">
+                    Comprendemos que acudir a consulta médica puede generar nerviosismo en la mascota. Por eso,
+                    diseñamos áreas separadas para perros, gatos y especies exóticas, minimizando estímulos estresantes
+                    y priorizando el bienestar de cada paciente.
+                </p>
+
+                <div class="cajasNumeros">
+                    <div class="cajaNumero">
+                        <strong>10+</strong>
+                        <span>Años de trayectoria</span>
+                    </div>
+                    <div class="cajaNumero">
+                        <strong>3</strong>
+                        <span>Especialistas médicos</span>
+                    </div>
+                    <div class="cajaNumero">
+                        <strong>100%</strong>
+                        <span>Compromiso ético</span>
+                    </div>
+                </div>
+
+                <a href="nosotros.html" class="botonSecundario">Conoce a nuestro equipo médico</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonios -->
+    <div class="testimonios">
+        <div class="contenedor">
+            <div class="cabeceraSeccion centro">
+                <span class="etiqueta">Opiniones Reales</span>
+                <h2 class="tituloSeccion">Lo que dicen las familias que confían en nosotros</h2>
+                <p class="subtituloSeccion">La tranquilidad de nuestros pacientes y sus familias es nuestro mejor
+                    testimonio de servicio.</p>
+            </div>
+
+            <div class="cajasTestimonios">
+
+                <div class="tarjetaTestimonio">
+                    <div class="estrellas">★★★★★</div>
+                    <p class="cita">
+                        "Llevé a Max de urgencias por una intoxicación un domingo a las 2 a.m. La rapidez, el
+                        profesionalismo y la calidez con la que lo estabilizaron le salvaron la vida. No tengo palabras
+                        para agradecer a todo el equipo."
+                    </p>
+                    <div class="autor">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80"
+                            alt="Camila">
+                        <div>
+                            <h4>Camila Restrepo</h4>
+                            <span>Mamá de Max (Golden Retriever)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjetaTestimonio">
+                    <div class="estrellas">★★★★★</div>
+                    <p class="cita">
+                        "Mi gata Michi siempre se estresaba terriblemente en las visitas veterinarias. En Patas Felices
+                        tienen una sala tranquila para felinos y la Dra. Andrea la atendió con una delicadeza increíble.
+                        Ahora sus controles son pura paz."
+                    </p>
+                    <div class="autor">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+                            alt="Andrés">
+                        <div>
+                            <h4>Andrés Morales</h4>
+                            <span>Papá de Michi (Gata común europea)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjetaTestimonio">
+                    <div class="estrellas">★★★★★</div>
+                    <p class="cita">
+                        "Es muy difícil encontrar médicos veterinarios que realmente sepan sobre mascotas exóticas.
+                        Llevé a mi conejo Tambor por un problema digestivo y el diagnóstico fue certero e impecable. Son
+                        unos profesionales de primer nivel."
+                    </p>
+                    <div class="autor">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
+                            alt="Laura">
+                        <div>
+                            <h4>Laura Méndez</h4>
+                            <span>Mamá de Tambor (Conejo Mini Lop)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="blog">
+        <div class="contenedor">
+            <div class="cabeceraSeccion">
+                <span class="etiqueta">Blog Médico & Consejos</span>
+                <h2 class="tituloSeccion">Aprende a Cuidar la Salud de tu Compañero</h2>
+                <p class="subtituloSeccion">Artículos redactados por nuestro equipo veterinario con recomendaciones
+                    científicas y prácticas.</p>
+            </div>
+
+            <div class="cajasBlog">
+
+                <div class="tarjetaBlog">
+                    <div class="cajaFoto">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80"
+                            alt="Cachorro">
+                        <span class="fecha">10 Oct, 2026</span>
+                    </div>
+                    <div class="infoBlog">
+                        <span class="categoria">Salud Canina</span>
+                        <h3>Calendario de vacunación indispensable en el primer año</h3>
+                        <p>Descubre por qué las vacunas múltiples y los refuerzos a tiempo son el escudo más seguro
+                            contra enfermedades infecciosas graves.</p>
+                        <a href="#" class="leerMas">Leer artículo completo →</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaBlog">
+                    <div class="cajaFoto">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80"
+                            alt="Gato">
+                        <span class="fecha">02 Oct, 2026</span>
+                    </div>
+                    <div class="infoBlog">
+                        <span class="categoria">Medicina Felina</span>
+                        <h3>Cómo prevenir problemas renales y fomentar hidratación</h3>
+                        <p>Los gatos tienen baja sensación de sed por naturaleza. Conoce cómo estimular el consumo de
+                            agua y proteger su función renal.</p>
+                        <a href="#" class="leerMas">Leer artículo completo →</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaBlog">
+                    <div class="cajaFoto">
+                        <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&q=80"
+                            alt="Conejo">
+                        <span class="fecha">24 Sep, 2026</span>
+                    </div>
+                    <div class="infoBlog">
+                        <span class="categoria">Mascotas Exóticas</span>
+                        <h3>La regla del 80% de heno: nutrición y salud dental</h3>
+                        <p>Aprende sobre el crecimiento continuo de sus dientes y cómo una dieta basada en fibra evita
+                            complicaciones digestivas críticas.</p>
+                        <a href="#" class="leerMas">Leer artículo completo →</a>
+                    </div>
+                </div>
+
+                <div class="tarjetaBlog">
+                    <div class="cajaFoto">
+                        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80"
+                            alt="Urgencias">
+                        <span class="fecha">15 Sep, 2026</span>
+                    </div>
+                    <div class="infoBlog">
+                        <span class="categoria">Primeros Auxilios</span>
+                        <h3>5 Síntomas silenciosos para acudir a urgencias 24h</h3>
+                        <p>Dificultad respiratoria, abdomen hinchado o letargo repentino: cuándo cada minuto marca la
+                            diferencia en su salud.</p>
+                        <a href="#" class="leerMas">Leer artículo completo →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ubicación y mapa -->
+    <div class="ubicacion">
+        <div class="contenedor ubicacionCuadro">
+
+            <div class="ladoIzq">
+                <span class="etiqueta">Encuéntranos Fácilmente</span>
+                <h2 class="tituloSeccion">Nuestra Clínica en el Corazón de la Ciudad</h2>
+                <p class="parrafo">Instalaciones diseñadas para el confort y seguridad de tu mascota, con parqueadero
+                    privado y rampa de acceso para emergencias.</p>
+
+                <div class="itemsInfo">
+                    <div class="item">
+                        <span class="icono">📍</span>
+                        <div>
+                            <strong>Dirección:</strong>
+                            <p>Av. Principal # 45-88, Sector Médico Veterinario</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="icono">⏰</span>
+                        <div>
+                            <strong>Horarios de Consulta:</strong>
+                            <p>Lunes a Sábado: 8:00 AM - 7:00 PM<br>Domingos: 9:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="icono">🚨</span>
+                        <div>
+                            <strong>Servicio de Urgencias:</strong>
+                            <p>Abierto las 24 Horas los 365 días del año</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <a href="citas.html" class="boton">Agendar Cita en Línea</a>
+                    <a href="tel:+573001234567" class="botonSecundario">Llamar Ahora</a>
+                </div>
+            </div>
+
+            <div class="ladoDer mapaFrame">
+
+                <!-- Mapa de Google -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127246.54471569724!2d-74.13166299999999!3d4.6482837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoSwgQ29sb21iaWE!5e0!3m2!1ses!2sco!4v1710000000000!5m2!1ses!2sco"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" title="Mapa Patas Felices">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="pie">
+        <div class="contenedor pieGrid">
+            <div>
+                <div class="logoPie">
+                    <img src="./assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogoPie">
+                    <span class="nombreLogoPie">Patas Felices</span>
+                </div>
+                <p class="textoPie">Clínica Veterinaria comprometida con la salud, ética y el bienestar integral de
+                    perros, gatos y especies exóticas.</p>
+                <p class="textoPie"><em>«Su bienestar, nuestra prioridad»</em></p>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Enlaces Rápidos</h4>
+                <ul class="linksPie">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Todos los Servicios</a></li>
+                    <li><a href="nosotros.html">Equipo Médico</a></li>
+                    <li><a href="nosotros.html#adopta">Programa de Adopción</a></li>
+                    <li><a href="citas.html">Agendar Cita</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Servicios Médicos</h4>
+                <ul class="linksPie">
+                    <li><a href="servicios.html#consulta">Consulta General</a></li>
+                    <li><a href="servicios.html#vacunacion">Vacunación & Desparasitación</a></li>
+                    <li><a href="servicios.html#cirugia">Cirugías & Esterilización</a></li>
+                    <li><a href="servicios.html#urgencias">Urgencias Médicas 24h</a></li>
+                    <li><a href="servicios.html#laboratorio">Laboratorio Clínico</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Contacto & Urgencias</h4>
+                <p class="textoPie">📞 <strong>Urgencias 24h:</strong> (300) 123-4567</p>
+                <p class="textoPie">💬 <strong>WhatsApp:</strong> +57 300 987 6543</p>
+                <p class="textoPie">✉️ <strong>Correo:</strong> contacto@patasfelicesvet.com</p>
+                <p class="textoPie">📍 <strong>Dirección:</strong> Av. Principal # 45-88</p>
+            </div>
+        </div>
+
+        <div class="pieInferior">
+            <div class="contenedor pieInferiorFlex">
+                <p>© 2026 Clínica Veterinaria Patas Felices. Todos los derechos reservados.</p>
+                <p>Dra. Andrea Castillo — Tarjeta Profesional Veterinaria No. 45892-COL</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/573001234567?text=Hola,%20quisiera%20consultar%20por%20una%20cita%20veterinaria"
+        class="botonWhatsapp" target="_blank" rel="noopener noreferrer" title="Escríbenos a WhatsApp"
+        aria-label="Contactar por WhatsApp">
+        <img src="./assets/img/whatsapp.png" class="iconoWhatsapp" alt="WhatsApp">
+    </a>
+
 </body>
+
+</html>

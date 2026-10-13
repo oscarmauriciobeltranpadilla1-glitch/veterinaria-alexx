@@ -1,0 +1,486 @@
+/* Colores del sitio */
+:root {
+    --azul: #07579E;
+    --turquesa: #10AFA8;
+    --seccion: #EAF8F7;
+    --dorado: #F5B544;
+    --dorado-hover: #e09f2d;
+    --texto: #163B68;
+    --gris: #6B7C8F;
+    --rojo: #E63946;
+    --borde: #D5E8E7;
+}
+
+/* Quita los márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--texto);
+    line-height: 1.6;
+    padding-top: 116px;
+}
+
+/* Contenedor centrado */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Letra Outfit para títulos y botones */
+h1,
+h2,
+h3,
+h4,
+.nombreLogo,
+.nombreLogoPie,
+.links a,
+.botonUrgencias,
+.boton,
+.botonSecundario,
+.botonLlamar,
+.botonConfirmar,
+.enlace,
+.leerMas,
+.dato strong,
+.cajaNumero strong,
+.insignia strong {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Etiqueta pequeña de las secciones */
+.etiqueta {
+    display: inline-block;
+    background-color: rgba(16, 175, 168, 0.12);
+    color: var(--turquesa);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+/* Cuadro de los íconos */
+.icono,
+.iconoVentaja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    font-size: 24px;
+    background-color: var(--seccion);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+/* Barra de navegación */
+.barra {
+    position: fixed;
+    top: 18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 82%;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 8px 25px rgba(7, 87, 158, 0.12);
+    border-radius: 16px;
+    border: 1px solid rgba(213, 232, 231, 0.7);
+    z-index: 1000;
+}
+
+/* Contenido de la barra */
+.barraContenido {
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fotoLogo,
+.fotoLogoPie {
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    padding: 2px;
+}
+
+.fotoLogo {
+    width: 58px;
+    height: 58px;
+    border: 2px solid var(--seccion);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.textoLogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombreLogo {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--azul);
+    line-height: 1.1;
+}
+
+.esloganLogo {
+    font-size: 12px;
+    color: var(--turquesa);
+    font-weight: 500;
+}
+
+/* Enlaces del menú */
+.links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botón del menú en celular (oculto en pantallas grandes) */
+.menuCheck,
+.hamburguesa {
+    display: none;
+}
+
+.links a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--texto);
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+.links a:hover,
+.links a.activo {
+    color: var(--turquesa);
+    background-color: var(--seccion);
+}
+
+/* Submenú de servicios */
+.submenu {
+    position: relative;
+}
+
+.submenuLista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgba(7, 87, 158, 0.12);
+    padding: 8px 0;
+}
+
+.submenu:hover .submenuLista {
+    display: block;
+}
+
+.submenuLista a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.submenuLista a:hover {
+    padding-left: 26px;
+}
+
+/* Botón de urgencias */
+.botonUrgencias {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFF3F3;
+    border: 1.5px solid var(--rojo);
+    padding: 8px 16px;
+    border-radius: 30px;
+    color: var(--rojo);
+}
+
+.botonUrgencias:hover {
+    background-color: var(--rojo);
+    color: #FFFFFF;
+}
+
+.puntoRojo {
+    width: 10px;
+    height: 10px;
+    background-color: var(--rojo);
+    border-radius: 50%;
+}
+
+.textoUrgencia {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.textoUrgencia small {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.textoUrgencia strong {
+    font-size: 15px;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #052648;
+    color: #FFFFFF;
+    padding-top: 60px;
+}
+
+.pieGrid {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.pieGrid>div {
+    flex: 1;
+}
+
+.logoPie {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.fotoLogoPie {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--turquesa);
+}
+
+.nombreLogoPie {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.textoPie {
+    font-size: 14px;
+    color: #A3B8CC;
+    margin-bottom: 10px;
+}
+
+.textoPie em {
+    color: var(--dorado);
+}
+
+.subtituloPie {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.linksPie li {
+    margin-bottom: 10px;
+}
+
+.linksPie a {
+    color: #A3B8CC;
+    font-size: 14px;
+}
+
+.linksPie a:hover {
+    color: var(--turquesa);
+    padding-left: 6px;
+}
+
+.pieInferior {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    font-size: 13px;
+    color: #7E97B0;
+    text-align: center;
+}
+
+.pieInferiorFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Botón de WhatsApp */
+.botonWhatsapp {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.botonWhatsapp:hover {
+    box-shadow: 0 10px 24px rgba(37, 211, 102, 0.55);
+}
+
+.iconoWhatsapp {
+    width: 58%;
+    height: 58%;
+}
+
+/* Laptops */
+@media (max-width: 1199px) {
+    .barra {
+        width: 90%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+    body {
+        padding-top: 165px;
+    }
+
+    .barra {
+        width: 92%;
+        top: 14px;
+        height: auto;
+        padding: 12px 16px;
+        border-radius: 14px;
+    }
+
+    .barraContenido {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .botonUrgencias {
+        order: 2;
+    }
+
+    .links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .links a {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+
+    .pieGrid {
+        flex-direction: column;
+    }
+}
+
+/* Celulares */
+@media (max-width: 767px) {
+    body {
+        padding-top: 140px;
+    }
+
+    .barra {
+        width: 94%;
+        top: 10px;
+        padding: 10px;
+    }
+
+    .esloganLogo,
+    .textoUrgencia small {
+        display: none;
+    }
+
+    .fotoLogo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .nombreLogo {
+        font-size: 18px;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 30px;
+        line-height: 1;
+        color: var(--azul);
+        cursor: pointer;
+        padding: 4px 8px;
+    }
+
+    .botonUrgencias {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+    }
+
+    .menuCheck:checked~.links {
+        display: flex;
+    }
+
+    .links a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .pieInferiorFlex {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .botonWhatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 18px;
+        right: 18px;
+    }
+}
