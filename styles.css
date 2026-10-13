@@ -1,99 +1,718 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("./base.css");
+
+/* Encabezado de cada sección */
+.cabeceraSeccion {
+    margin-bottom: 40px;
 }
 
-.sec1 {
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
+.cabeceraSeccion.centro {
+    text-align: center;
+}
+
+.cabeceraSeccion.centro .subtituloSeccion {
+    margin: 0 auto;
+}
+
+.tituloSeccion {
+    font-size: 35px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.subtituloSeccion {
+    font-size: 17px;
+    color: var(--gris);
+    max-width: 650px;
+}
+
+/* Botones */
+.boton,
+.botonSecundario,
+.botonLlamar {
+    display: inline-flex;
     align-items: center;
-    position: fixed;
-    width: 70%;
-    top: 6%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.1);
-    border-radius: 4px;
-}
-
-.sec1 img {
-    width: 70px;
-    height: 70px;
-    margin-left: 20px;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-principal>li {
-    display: inline-block;
-    position: relative;
-}
-
-.menu-principal a {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #333;
-}
-
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #EAF8F7;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    z-index: 2;
-}
-
-.dropdown-content li {
-    display: block;
-    background-color: #EAF8F7;
-    color: #F5B544;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.sec1 button {
-    background-color: #F5B544;
-    color: #ffffff;
-    border: 0;
-    padding: 9px 18px;
-    border-radius: 4px;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 30px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 15px;
-    margin-right: 20px;
 }
 
-.sec2 {
+.boton,
+.botonLlamar {
+    background-color: var(--dorado);
+    color: #FFFFFF;
+}
+
+.boton {
+    padding: 13px 28px;
+    box-shadow: 0 4px 14px rgba(245, 181, 68, 0.4);
+}
+
+.boton:hover,
+.botonLlamar:hover {
+    background-color: var(--dorado-hover);
+}
+
+.botonSecundario {
+    color: var(--azul);
+    border: 2px solid var(--azul);
+    padding: 11px 26px;
+}
+
+.botonSecundario:hover {
+    background-color: var(--azul);
+    color: #FFFFFF;
+}
+
+/* Cuadrículas */
+.cajasDiferenciales,
+.cajasServicios,
+.cajasTestimonios,
+.cajasBlog {
+    display: grid;
+    gap: 26px;
+}
+
+.cajasDiferenciales,
+.cajasServicios,
+.cajasBlog {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cajasTestimonios {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cajasServicios {
+    margin-bottom: 45px;
+}
+
+/* Tarjetas */
+.cajaDiferencial,
+.tarjetaServicio,
+.tarjetaBlog,
+.tarjetaTestimonio {
     display: flex;
-    position: relative;
-    align-items: center;
-    width: 70%;
-    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.1);
-    border-radius: 4px;
-    margin-left: 15%;
-    margin-top: 5.2%;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
 }
 
-.sec2 img {
-    position: absolute;
+.tarjetaServicio,
+.tarjetaBlog,
+.tarjetaTestimonio {
+    flex-direction: column;
+}
+
+.tarjetaServicio,
+.tarjetaTestimonio {
+    box-shadow: 0 10px 25px rgba(22, 59, 104, 0.08);
+}
+
+.cajaDiferencial,
+.tarjetaBlog {
+    border: 1px solid var(--borde);
+}
+
+.cajaDiferencial:hover,
+.tarjetaBlog:hover {
+    border-color: var(--turquesa);
+    box-shadow: 0 10px 25px rgba(22, 59, 104, 0.08);
+}
+
+.cajaDiferencial {
+    padding: 24px;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.cajaDiferencial h3 {
+    font-size: 18px;
+    color: var(--azul);
+    margin-bottom: 6px;
+}
+
+.cajaDiferencial p {
+    font-size: 14px;
+    color: var(--gris);
+    line-height: 1.45;
+}
+
+/* Hero (parte principal) */
+.hero {
+    background-color: var(--seccion);
+    padding: 60px 0 80px;
+}
+
+.heroContenido {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.ladoIzq,
+.ladoDer {
+    flex: 1;
+}
+
+.tituloHero {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.tituloHero span {
+    color: var(--turquesa);
+}
+
+.parrafoHero {
+    font-size: 18px;
+    color: var(--gris);
+    margin-bottom: 30px;
+}
+
+.botones {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.cajaDatos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 16px 22px;
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+}
+
+.dato strong {
+    display: block;
+    font-size: 18px;
+    color: var(--azul);
+}
+
+.dato span {
+    font-size: 13px;
+    color: var(--gris);
+}
+
+.linea {
+    width: 1px;
+    height: 32px;
+    background-color: var(--borde);
+}
+
+/* Lado derecho del hero (video) */
+.hero .ladoDer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cajaFotoHero {
     width: 100%;
-    height: 800px;
-    top: 2%;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(7, 87, 158, 0.15);
+    border: 4px solid #FFFFFF;
+}
+
+.fotoHero {
+    width: 100%;
+    height: 480px;
     object-fit: cover;
-    z-index: -1;
-    border-radius: 4px;
+}
+
+/* Tarjetas flotantes sobre el hero */
+.insignia {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 14px;
+    padding: 12px 18px;
+    box-shadow: 0 10px 24px rgba(7, 87, 158, 0.14);
+}
+
+.iconoInsignia {
+    font-size: 26px;
+}
+
+.insignia strong {
+    display: block;
+    font-size: 15px;
+}
+
+.insignia small {
+    font-size: 12px;
+    color: var(--gris);
+}
+
+.insigniaArriba {
+    top: -15px;
+    right: -15px;
+}
+
+.insigniaAbajo {
+    bottom: -15px;
+    left: -15px;
+}
+
+/* Fondos y espacios de cada sección */
+.servicios,
+.testimonios,
+.ubicacion {
+    background-color: var(--seccion);
+}
+
+.diferenciales {
+    padding: 50px 0;
+}
+
+.servicios,
+.ubicacion {
+    padding: 70px 0;
+}
+
+.testimonios {
+    padding: 75px 0;
+}
+
+.quienEs,
+.blog {
+    padding: 80px 0;
+}
+
+/* Fotos de servicios y blog */
+.cajaFoto {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.cajaFoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.cajaFoto:hover img {
+    transform: scale(1.06);
+}
+
+/* Etiquetas sobre las fotos */
+.badge,
+.fecha {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+.badge {
+    top: 14px;
+    right: 14px;
+    background-color: var(--azul);
+    font-weight: 600;
+    border-radius: 12px;
+}
+
+.badgeRojo {
+    background-color: var(--rojo);
+}
+
+.fecha {
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(22, 59, 104, 0.85);
+    border-radius: 6px;
+}
+
+/* Texto de las tarjetas */
+.infoTarjeta,
+.infoBlog {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 22px;
+}
+
+.infoTarjeta h3,
+.infoBlog h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.infoTarjeta p,
+.infoBlog p {
+    font-size: 14px;
+    color: var(--gris);
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.categoria {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--turquesa);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+/* Enlaces de las tarjetas */
+.enlace,
+.leerMas {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--turquesa);
+}
+
+.enlace:hover,
+.leerMas:hover {
+    color: var(--azul);
+}
+
+/* Aviso de más servicios */
+.cajaAviso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(7, 87, 158, 0.08);
+}
+
+.cajaAviso p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Banner de urgencias */
+.urgencias {
+    background-color: var(--azul);
+    color: #FFFFFF;
+    padding: 55px 0;
+}
+
+.urgenciasFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.etiquetaRoja {
+    display: inline-block;
+    background-color: var(--rojo);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.urgencias h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.urgencias p {
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+}
+
+.botonLlamar {
+    gap: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 16px 32px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.notaUrgencia {
+    display: block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
+}
+
+/* Sección de la doctora */
+.quienEsFlex {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.quienEs .ladoIzq {
+    position: relative;
+    max-width: 460px;
+}
+
+.quienEs .ladoDer {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fotoDoctora {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(22, 59, 104, 0.08);
+}
+
+.fraseDoctora {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    max-width: 320px;
+    background-color: #FFFFFF;
+    padding: 18px 22px;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(7, 87, 158, 0.15);
+    border-left: 5px solid var(--turquesa);
+}
+
+.fraseDoctora p {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+.fraseDoctora strong {
+    font-size: 13px;
+    color: var(--azul);
+}
+
+.parrafo {
+    color: var(--gris);
+    margin-bottom: 16px;
+}
+
+.cajasNumeros {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 25px 0 30px;
+}
+
+.cajaNumero {
+    flex: 1;
+    background-color: var(--seccion);
+    border-radius: 12px;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.cajaNumero strong {
+    display: block;
+    font-size: 29px;
+    color: var(--azul);
+}
+
+.cajaNumero span {
+    font-size: 13px;
+    color: var(--gris);
+    font-weight: 500;
+}
+
+/* Testimonios */
+.tarjetaTestimonio {
+    padding: 32px;
+    justify-content: space-between;
+}
+
+.estrellas {
+    color: var(--dorado);
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.cita {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 22px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.autor img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--turquesa);
+}
+
+.autor h4 {
+    font-size: 17px;
+}
+
+.autor span {
+    font-size: 13px;
+    color: var(--gris);
+}
+
+/* Ubicación y mapa */
+.ubicacionCuadro {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(22, 59, 104, 0.08);
+}
+
+.ubicacion .ladoIzq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+}
+
+.ubicacion .ladoDer {
+    min-height: 380px;
+}
+
+.itemsInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 25px 0 30px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.item strong {
+    font-size: 15px;
+}
+
+.item p {
+    font-size: 14px;
+    color: var(--gris);
+}
+
+.mapaFrame iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: 0;
+}
+
+/* Laptops */
+@media (max-width: 1199px) {
+
+    .cajasDiferenciales,
+    .cajasServicios,
+    .cajasBlog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+
+    .heroContenido,
+    .quienEsFlex,
+    .ubicacionCuadro {
+        flex-direction: column;
+    }
+
+    .heroContenido {
+        text-align: center;
+    }
+
+    .tituloHero {
+        font-size: 40px;
+    }
+
+    .botones,
+    .cajaDatos {
+        justify-content: center;
+    }
+
+    .quienEs .ladoIzq {
+        max-width: none;
+        width: 100%;
+    }
+
+    .cajasTestimonios {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Celulares */
+@media (max-width: 767px) {
+
+    .cajasDiferenciales,
+    .cajasServicios,
+    .cajasBlog {
+        grid-template-columns: 1fr;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cajaDatos,
+    .cajasNumeros {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .linea {
+        width: 60px;
+        height: 1px;
+    }
+
+    .fotoHero {
+        height: 280px;
+    }
+
+    .tituloHero {
+        font-size: 30px;
+    }
+
+    .insignia {
+        display: none;
+    }
+
+    .urgenciasFlex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .botonLlamar {
+        width: 100%;
+    }
+
+    .fraseDoctora {
+        position: static;
+        max-width: none;
+        margin-top: 16px;
+    }
+
+    .ubicacion .ladoIzq {
+        padding: 25px 18px;
+    }
 }
