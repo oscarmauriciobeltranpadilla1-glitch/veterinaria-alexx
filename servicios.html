@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Patas Felices</title>
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./servicios.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="barra">
+        <div class="barraContenido">
+            <a href="index.html" class="logo">
+                <img src="./assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogo">
+                <div class="textoLogo">
+                    <span class="nombreLogo">Patas Felices</span>
+                    <span class="esloganLogo">Su bienestar, nuestra prioridad</span>
+                </div>
+            </a>
+
+            <!-- Botón del menú en celular -->
+            <input type="checkbox" id="menu" class="menuCheck">
+            <label for="menu" class="hamburguesa" aria-label="Abrir menú">☰</label>
+
+            <div class="links">
+                <a href="index.html">Inicio</a>
+
+                <!-- Submenú de servicios -->
+                <div class="submenu">
+                    <a href="servicios.html" class="activo">Servicios ▾</a>
+                    <div class="submenuLista">
+                        <a href="servicios.html#urgencias">Urgencias 24h</a>
+                        <a href="servicios.html#consulta">Consulta General</a>
+                        <a href="servicios.html#vacunacion">Vacunación</a>
+                        <a href="servicios.html#esterilizacion">Esterilización</a>
+                        <a href="servicios.html#cirugia">Cirugía</a>
+                        <a href="servicios.html#peluqueria">Peluquería</a>
+                        <a href="servicios.html#hospitalizacion">Hospitalización</a>
+                        <a href="servicios.html#laboratorio">Laboratorio</a>
+                    </div>
+                </div>
+
+                <a href="nosotros.html">Nosotros</a>
+                <a href="nosotros.html#adopta">Adopta</a>
+                <a href="citas.html">Agendar Cita</a>
+            </div>
+
+            <!-- Botón de urgencias -->
+            <a href="tel:+573001234567" class="botonUrgencias">
+                <span class="puntoRojo"></span>
+                <span class="textoUrgencia">
+                    <small>Urgencias 24h</small>
+                    <strong>(300) 123-4567</strong>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Encabezado Principal -->
+    <div class="cabeceraServicios">
+        <div class="contenedor">
+            <span class="etiqueta">Atención Integral</span>
+            <h1 class="titulo">Nuestros Servicios Médicos</h1>
+            <p class="parrafo">
+                Cada servicio está diseñado para garantizar el bienestar, la salud y la felicidad de tu mascota. 🐾
+            </p>
+        </div>
+    </div>
+
+    <!-- Contenedor Principal de Servicios -->
+    <div class="seccionServicios">
+        <div class="contenedor gridServicios">
+
+            <!-- Servicio 1: Urgencias -->
+            <div class="servicioCard" id="urgencias">
+                <div class="imagenCard">
+                    <img src="assets/img/urgen-.jpeg" alt="Urgencias y Emergencias Veterinarias">
+                </div>
+                <div class="servicioInfo">
+                    <h3>Urgencias y Emergencias</h3>
+                    <p>🚨 Urgencias 24 horas. En Patas Felices estamos disponibles las 24 horas para atender a tu mascota cuando más lo necesita. 🐾❤️ Rápida, profesional y con mucho amor.</p>
+                    <a href="citas.html" class="botonVerMas">Agendar o Consultar</a>
+                </div>
+            </div>
+
+            <!-- Servicio 2: Consulta General -->
+            <div class="servicioCard" id="consulta">
+                <div class="imagenCard">
+                    <img src="assets/img/Consulta general.jpeg" alt="Consulta Veterinaria General">
+                </div>
+                <div class="servicioInfo">
+                    <h3>Consulta General</h3>
+                    <p>Brindamos atención veterinaria integral para cuidar la salud y el bienestar de tu mascota. Evaluamos su estado de salud y te orientamos con el tratamiento necesario. 🐶🐱💙</p>
+                    <a href="citas.html" class="botonVerMas">Agendar Cita</a>
+                </div>
+            </div>
+
+            <!-- Servicio 3: Vacunación -->
+            <div class="servicioCard" id="vacunacion">
+                <div class="imagenCard">
+                    <img src="assets/img/Vacunacion.jpeg" alt="Vacunación y Desparasitación">
+                </div>
+                <div class="servicioInfo">
+                    <h3>Vacunación</h3>
+                    <p>Protege a tu mascota con sus vacunas al día y previene enfermedades peligrosas. ¡Mantén su esquema al día! 🐾💉</p>
+                    <a href="citas.html" class="botonVerMas">Agendar Cita</a>
+                </div>
+            </div>
+
+            <!-- Servicio 4: Esterilización -->
+            <div class="servicioCard" id="esterilizacion">
+                <div class="imagenCard">
+                    <img src="assets/img/Esteri.jpeg" alt="Esterilización Veterinaria">
+                </div>
+                <div class="servicioInfo">
+                    <h3>Esterilización</h3>
+                    <p>Cuidamos la salud y calidad de vida de tu mascota con un procedimiento quirúrgico seguro, profesional y con el mejor cuidado. 🐾💙</p>
+                    <a href="citas.html" class="botonVerMas">Agendar Cita</a>
+                </div>
+            </div>
+
+            <!-- Servicio 5: Cirugía -->
+            <div class="servicioCard" id="cirugia">
+                <div class="imagenCard">
+                    <img src="assets/img/Cirugia.jpeg" alt="Cirugía Veterinaria">
+                </div>
+                <div class="servicioInfo">
+                    <h3>Cirugía Veterinaria</h3>
+                    <p>Procedimientos quirúrgicos seguros y profesionales con equipos modernos para cuidar la salud de tu mascota. 🐾🩺</p>
+                    <a href="citas.html" class="botonVerMas">Agendar Cita</a>
+                </div>
+            </div>
+
+            <!-- Servicio 6: Peluquería -->
+            <div class="servicioCard" id="peluqueria">
+                <div class="imagenCard">
+                    <img src="assets/img/Peluqueria.jpeg" alt="Peluquería Canina y Felina">
+                </div>
+                <div class="servicioInfo">
+                    <h3>Peluquería y Estética</h3>
+                    <p>Consentimos a tu mascota con higiene, baño, corte de pelo, cuidado y mucho amor. 🐾✂️</p>
+                    <a href="citas.html" class="botonVerMas">Agendar Cita</a>
+                </div>
+            </div>
+
+            <!-- Servicio 7: Hospitalización -->
+            <div class="servicioCard" id="hospitalizacion">
+                <div class="imagenCard">
+                    <img src="assets/img/Hospitalizacion.jpeg" alt="Hospitalización Veterinaria">
+                </div>
+                <div class="servicioInfo">
+                    <h3>Hospitalización</h3>
+                    <p>Cuidado continuo y atención especializada supervisada por médicos para la pronta recuperación de tu mascota. 🐾🏥</p>
+                    <a href="citas.html" class="botonVerMas">Agendar Cita</a>
+                </div>
+            </div>
+
+            <!-- Servicio 8: Laboratorio -->
+            <div class="servicioCard" id="laboratorio">
+                <div class="imagenCard">
+                    <img src="assets/img/Laborario.jpeg" alt="Laboratorio Clínico Veterinario">
+                </div>
+                <div class="servicioInfo">
+                    <h3>Laboratorio Clínico</h3>
+                    <p>Exámenes de diagnóstico confiables y rápidos para conocer y cuidar mejor la salud de tu compañero. 🐾🔬</p>
+                    <a href="citas.html" class="botonVerMas">Agendar Cita</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="pie">
+        <div class="contenedor pieGrid">
+            <div>
+                <div class="logoPie">
+                    <img src="./assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogoPie">
+                    <span class="nombreLogoPie">Patas Felices</span>
+                </div>
+                <p class="textoPie">Clínica Veterinaria comprometida con la salud, ética y el bienestar integral de perros, gatos y especies exóticas.</p>
+                <p class="textoPie"><em>«Su bienestar, nuestra prioridad»</em></p>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Enlaces Rápidos</h4>
+                <ul class="linksPie">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Todos los Servicios</a></li>
+                    <li><a href="nosotros.html">Equipo Médico</a></li>
+                    <li><a href="nosotros.html#adopta">Programa de Adopción</a></li>
+                    <li><a href="citas.html">Agendar Cita</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Servicios Médicos</h4>
+                <ul class="linksPie">
+                    <li><a href="servicios.html#consulta">Consulta General</a></li>
+                    <li><a href="servicios.html#vacunacion">Vacunación & Desparasitación</a></li>
+                    <li><a href="servicios.html#cirugia">Cirugías & Esterilización</a></li>
+                    <li><a href="servicios.html#urgencias">Urgencias Médicas 24h</a></li>
+                    <li><a href="servicios.html#laboratorio">Laboratorio Clínico</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Contacto & Urgencias</h4>
+                <p class="textoPie">📞 <strong>Urgencias 24h:</strong> (300) 123-4567</p>
+                <p class="textoPie">💬 <strong>WhatsApp:</strong> +57 300 987 6543</p>
+                <p class="textoPie">✉️ <strong>Correo:</strong> contacto@patasfelicesvet.com</p>
+                <p class="textoPie">📍 <strong>Dirección:</strong> Av. Principal # 45-88</p>
+            </div>
+        </div>
+
+        <div class="pieInferior">
+            <div class="contenedor pieInferiorFlex">
+                <p>© 2026 Clínica Veterinaria Patas Felices. Todos los derechos reservados.</p>
+                <p>Dra. Andrea Castillo — Tarjeta Profesional Veterinaria No. 45892-COL</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/573001234567?text=Hola,%20quisiera%20agendar%20una%20cita%20veterinaria"
+        class="botonWhatsapp" target="_blank" rel="noopener noreferrer" title="Escríbenos a WhatsApp"
+        aria-label="Contactar por WhatsApp">
+        <img src="./assets/img/whatsapp.png" class="iconoWhatsapp" alt="WhatsApp">
+    </a>
+
+</body>
+
+</html>
