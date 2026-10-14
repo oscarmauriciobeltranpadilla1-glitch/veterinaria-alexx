@@ -645,6 +645,10 @@
         font-size: 40px;
     }
 
+    .hero .ladoDer {
+        order: -1;
+    }
+
     .botones,
     .cajaDatos {
         justify-content: center;
