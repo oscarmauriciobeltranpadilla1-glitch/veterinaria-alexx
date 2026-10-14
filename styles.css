@@ -229,7 +229,7 @@
 .blog,
 .ubicacion {
     background-color: #FFFFFF;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("./assets/img/paticas.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url("./assets/img/paticas.jpg");
     background-size: 100% 100%, 620px auto;
     background-position: center, left top;
     background-repeat: no-repeat, repeat;
