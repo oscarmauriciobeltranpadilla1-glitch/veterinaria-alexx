@@ -141,7 +141,7 @@
 
             <!-- Lado derecho: formulario -->
             <div class="ladoDer">
-                <form action="#" method="POST" class="formulario">
+                <form action="#" method="POST" class="formulario" id="formulario">
 
                     <h2 class="subtituloForm">Formulario de Registro y Cita</h2>
                     <p class="descForm">Completa los campos para reservar tu turno.</p>
@@ -190,12 +190,12 @@
                                 <label for="tipoMascota">Tipo de Mascota *</label>
                                 <select id="tipoMascota" name="tipoMascota" required>
                                     <option value="" disabled selected>Selecciona especie...</option>
-                                    <option value="perro">🐶 Perro</option>
-                                    <option value="gato">🐱 Gato</option>
-                                    <option value="conejo">🐰 Conejo</option>
-                                    <option value="roedor">🐹 Roedor (Hámster, Cobaya)</option>
-                                    <option value="ave">🦜 Ave</option>
-                                    <option value="otro">🐾 Otra especie exótica</option>
+                                    <option value="perro">Perro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="conejo">Conejo</option>
+                                    <option value="roedor">Roedor (Hámster, Cobaya)</option>
+                                    <option value="ave">Ave</option>
+                                    <option value="otro">Otra especie exótica</option>
                                 </select>
                             </div>
                         </div>
@@ -223,13 +223,15 @@
                                 <label for="servicio">Servicio Solicitado *</label>
                                 <select id="servicio" name="servicio" required>
                                     <option value="" disabled selected>Selecciona un servicio...</option>
-                                    <option value="consulta">🩺 Consulta Médica General</option>
-                                    <option value="vacunacion">💉 Vacunación & Desparasitación</option>
-                                    <option value="esterilizacion">✂️ Valoración para Esterilización</option>
-                                    <option value="cirugia">🔬 Cirugía Especializada</option>
-                                    <option value="peluqueria">🛁 Peluquería & Baño Spa</option>
-                                    <option value="laboratorio">🧪 Exámenes de Laboratorio</option>
-                                    <option value="exoticos">🐇 Consulta de Mascota Exótica</option>
+                                    <option value="urgencias">Urgencias y Emergencias 24h</option>
+                                    <option value="consulta">Consulta Médica General</option>
+                                    <option value="vacunacion">Vacunación & Desparasitación</option>
+                                    <option value="esterilizacion">Valoración para Esterilización</option>
+                                    <option value="cirugia">Cirugía Especializada</option>
+                                    <option value="peluqueria">Peluquería & Baño Spa</option>
+                                    <option value="hospitalizacion">Hospitalización</option>
+                                    <option value="laboratorio">Exámenes de Laboratorio</option>
+                                    <option value="exoticos">Consulta de Mascota Exótica</option>
                                 </select>
                             </div>
                             <div class="campo">

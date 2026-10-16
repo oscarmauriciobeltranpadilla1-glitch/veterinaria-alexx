@@ -2,14 +2,13 @@
 
 /* Encabezado Principal */
 .cabeceraNosotros {
-    background-color: #f8fafcf1; 
-
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"><g fill="%2310AFA8" fill-opacity="0.09"><g transform="translate(10,10) rotate(-15) scale(0.7)"><path d="M30,55 C20,55 15,70 25,80 C32,87 48,87 55,80 C65,70 60,55 50,55 C43,55 37,58 30,55 Z"/><ellipse cx="18" cy="45" rx="6" ry="9" transform="rotate(-20 18 45)"/><ellipse cx="32" cy="36" rx="6" ry="9" transform="rotate(-5 32 36)"/><ellipse cx="48" cy="36" rx="6" ry="9" transform="rotate(5 48 36)"/><ellipse cx="62" cy="45" rx="6" ry="9" transform="rotate(20 62 45)"/></g><g transform="translate(100,25) rotate(25) scale(0.55)"><path d="M30,55 C20,55 15,70 25,80 C32,87 48,87 55,80 C65,70 60,55 50,55 C43,55 37,58 30,55 Z"/><ellipse cx="18" cy="45" rx="6" ry="9" transform="rotate(-20 18 45)"/><ellipse cx="32" cy="36" rx="6" ry="9" transform="rotate(-5 32 36)"/><ellipse cx="48" cy="36" rx="6" ry="9" transform="rotate(5 48 36)"/><ellipse cx="62" cy="45" rx="6" ry="9" transform="rotate(20 62 45)"/></g><g transform="translate(45,90) rotate(40) scale(0.65)"><path d="M30,55 C20,55 15,70 25,80 C32,87 48,87 55,80 C65,70 60,55 50,55 C43,55 37,58 30,55 Z"/><ellipse cx="18" cy="45" rx="6" ry="9" transform="rotate(-20 18 45)"/><ellipse cx="32" cy="36" rx="6" ry="9" transform="rotate(-5 32 36)"/><ellipse cx="48" cy="36" rx="6" ry="9" transform="rotate(5 48 36)"/><ellipse cx="62" cy="45" rx="6" ry="9" transform="rotate(20 62 45)"/></g><g transform="translate(115,100) rotate(-30) scale(0.75)"><path d="M30,55 C20,55 15,70 25,80 C32,87 48,87 55,80 C65,70 60,55 50,55 C43,55 37,58 30,55 Z"/><ellipse cx="18" cy="45" rx="6" ry="9" transform="rotate(-20 18 45)"/><ellipse cx="32" cy="36" rx="6" ry="9" transform="rotate(-5 32 36)"/><ellipse cx="48" cy="36" rx="6" ry="9" transform="rotate(5 48 36)"/><ellipse cx="62" cy="45" rx="6" ry="9" transform="rotate(20 62 45)"/></g></g></svg>');
-    background-repeat: repeat;
-    background-size: 160px 160px; /* Tamaño del bloque del patrón */
+    background-color: #FFFFFF;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url("./assets/img/paticas.jpg");
+    background-size: 100% 100%, 620px auto;
+    background-position: center, left top;
+    background-repeat: no-repeat, repeat;
     padding: 60px 0 50px;
     text-align: center;
-    opacity: 0.9;
 }
 
 .etiqueta {

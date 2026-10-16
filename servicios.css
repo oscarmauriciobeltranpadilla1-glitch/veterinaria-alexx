@@ -3,6 +3,10 @@
 /* Encabezado */
 .cabeceraServicios {
     background-color: #FFFFFF;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url("./assets/img/paticas.jpg");
+    background-size: 100% 100%, 620px auto;
+    background-position: center, left top;
+    background-repeat: no-repeat, repeat;
     padding: 50px 0 40px;
     text-align: center;
 }

@@ -3,6 +3,10 @@
 /* Encabezado */
 .cabeceraCitas {
     background-color: #FFFFFF;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url("./assets/img/paticas.jpg");
+    background-size: 100% 100%, 620px auto;
+    background-position: center, left top;
+    background-repeat: no-repeat, repeat;
     padding: 50px 0 40px;
     text-align: center;
 }
@@ -154,6 +158,7 @@
     border-radius: 20px;
     padding: 36px;
     box-shadow: 0 12px 32px rgba(7, 87, 158, 0.1);
+    scroll-margin-top: 130px;
 }
 
 .subtituloForm {
