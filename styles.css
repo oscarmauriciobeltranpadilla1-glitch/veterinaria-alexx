@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+.cabeceraSeccion.centro .etiqueta {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cabeceraSeccion.centro .subtituloSeccion {
     margin: 0 auto;
 }
@@ -222,17 +227,23 @@
     background-color: var(--borde);
 }
 
-/* Fondos y espacios de cada sección */
+/* Fondos y espacios de cada sección
+Secciones con fondo de patitas */
 .servicios,
-.testimonios,
 .quienEs,
 .blog,
 .ubicacion {
     background-color: #FFFFFF;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url("./assets/img/paticas.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url("./assets/img/paticas.jpg");
     background-size: 100% 100%, 620px auto;
     background-position: center, left top;
     background-repeat: no-repeat, repeat;
+}
+
+/* Secciones con fondo de color suave */
+.testimonios {
+    background-color: var(--seccion);
+    background-image: none;
 }
 
 .servicios,
@@ -408,6 +419,72 @@
     margin-top: 8px;
 }
 
+/* Banner de Adóptame (Color Turquesa Cálido) */
+.bannerAdopta {
+    background: linear-gradient(135deg, #10AFA8 0%, #0B8E88 100%);
+    color: #FFFFFF;
+    padding: 55px 0;
+}
+
+.bannerAdoptaFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.etiquetaAdopta {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: var(--turquesa);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.bannerAdopta h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+}
+
+.bannerAdopta p {
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.botonAdopta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--dorado);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 32px;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.botonAdopta:hover {
+    background-color: var(--dorado-hover);
+    transform: translateY(-2px);
+}
+
+.notaAdopta {
+    display: block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 8px;
+}
+
 /* Sección de la doctora */
 .quienEsFlex {
     display: flex;
@@ -538,9 +615,12 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(22, 59, 104, 0.08);
+    border: 1px solid var(--borde);
+    align-items: stretch;
 }
 
 .ubicacion .ladoIzq {
+    flex: 1.1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -548,7 +628,10 @@
 }
 
 .ubicacion .ladoDer {
-    min-height: 380px;
+    flex: 1;
+    min-width: 360px;
+    min-height: 420px;
+    display: flex;
 }
 
 .itemsInfo {
@@ -576,7 +659,7 @@
 .mapaFrame iframe {
     width: 100%;
     height: 100%;
-    min-height: 380px;
+    min-height: 420px;
     border: 0;
 }
 
@@ -649,13 +732,25 @@
         font-size: 30px;
     }
 
-    .urgenciasFlex {
+    .urgenciasFlex,
+    .bannerAdoptaFlex {
         flex-direction: column;
         text-align: center;
     }
 
-    .botonLlamar {
+    .botonLlamar,
+    .botonAdopta {
         width: 100%;
+        justify-content: center;
+    }
+
+    /* Centrar títulos y óvalos en celular para que no se vean raros con el fondo */
+    .cabeceraSeccion {
+        text-align: center;
+    }
+
+    .cabeceraSeccion .subtituloSeccion {
+        margin: 0 auto;
     }
 
     .fraseDoctora {
