@@ -97,8 +97,10 @@
             </div>
 
             <div class="quienesImagen">
-                <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?q=80&w=800&auto=format&fit=crop"
-                    alt="Veterinario atendiendo un perro con amor">
+                <video class="videoHistoria" controls preload="metadata" poster="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?q=80&w=800&auto=format&fit=crop">
+                    <source src="./assets/img/historia.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
             </div>
 
         </div>
@@ -126,37 +128,59 @@
         </div>
     </div>
 
-    <!-- Sección Valores -->
-    <div class="seccionValores">
+    <!-- Sección Equipo Médico / Videos de Doctores -->
+    <div class="seccionEquipo" id="equipo">
         <div class="contenedor">
-            <h2 class="tituloValores">¿Por qué confiar en Patas Felices?</h2>
+            <div class="cabeceraSeccionEquipo">
+                <span class="etiqueta">Especialistas a tu Servicio</span>
+                <h2 class="tituloEquipo">Nuestro Equipo Médico</h2>
+                <p class="subtituloEquipo">Conoce a los profesionales apasionados que cuidan de la salud y el bienestar de tu mascota.</p>
+            </div>
 
-            <div class="valoresGrid">
-                <div class="valorCard">
-                    <span class="iconoValor">🩺</span>
-                    <h3>Médicos Especializados</h3>
-                    <p>Nuestro equipo está en constante capacitación para ofrecer procedimientos seguros e innovadores.
-                    </p>
+            <div class="equipoGrid">
+                <!-- Profesional 1: Dra. Andrea Castillo -->
+                <div class="doctorCard">
+                    <div class="videoWrapper">
+                        <video class="videoDoctor" controls preload="metadata" poster="./assets/img/Equipo1.jfif">
+                            <source src="./assets/img/profesional1.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                    <div class="doctorInfo">
+                        <span class="especialidadDoctor">Medicina Interna & Exóticos</span>
+                        <h3>Dra. Andrea Castillo</h3>
+                        <p class="descDoctor">Fundadora y directora médica con más de 10 años de experiencia dedicada a caninos, felinos y fauna exótica.</p>
+                    </div>
                 </div>
 
-                <div class="valorCard">
-                    <span class="iconoValor">❤️</span>
-                    <h3>Vocación de Servicio</h3>
-                    <p>Cada consulta se realiza con paciencia, empatía y el máximo cariño hacia tu peludito.</p>
+                <!-- Profesional 2: Dr. Carlos Mendoza -->
+                <div class="doctorCard">
+                    <div class="videoWrapper">
+                        <video class="videoDoctor" controls preload="metadata" poster="./assets/img/Equipo2.jfif">
+                            <source src="./assets/img/profesional2.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                    <div class="doctorInfo">
+                        <span class="especialidadDoctor">Cirugía & Traumatología</span>
+                        <h3>Dr. Carlos Mendoza</h3>
+                        <p class="descDoctor">Especialista quirúrgico comprometido con procedimientos avanzados, seguros y mínimamente invasivos.</p>
+                    </div>
                 </div>
 
-                <div class="valorCard">
-                    <span class="iconoValor">🔬</span>
-                    <h3>Tecnología de Punta</h3>
-                    <p>Contamos con equipos modernos para análisis clínicos, imágenes diagnósticas y quirófano equipado.
-                    </p>
-                </div>
-
-                <div class="valorCard">
-                    <span class="iconoValor">🚨</span>
-                    <h3>Urgencias 24/7</h3>
-                    <p>Estamos disponibles en cualquier momento en que tu mascota requiera asistencia médica inmediata.
-                    </p>
+                <!-- Profesional 3: Dra. Valentina Ruiz -->
+                <div class="doctorCard">
+                    <div class="videoWrapper">
+                        <video class="videoDoctor" controls preload="metadata" poster="./assets/img/Equipo3.jfif">
+                            <source src="./assets/img/profesional3.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                    </div>
+                    <div class="doctorInfo">
+                        <span class="especialidadDoctor">Dermatología & Medicina Felina</span>
+                        <h3>Dra. Valentina Ruiz</h3>
+                        <p class="descDoctor">Experta en salud dermatológica y atención libre de estrés bajo protocolos certificados Cat-Friendly.</p>
+                    </div>
                 </div>
             </div>
         </div>

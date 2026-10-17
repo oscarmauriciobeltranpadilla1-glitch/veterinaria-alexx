@@ -704,66 +704,6 @@ Secciones con fondo de patitas */
     }
 }
 
-/* Celulares */
-@media (max-width: 767px) {
-
-    .cajasServicios,
-    .cajasBlog {
-        grid-template-columns: 1fr;
-    }
-
-    .botones {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .cajaDatos,
-    .cajasNumeros {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .linea {
-        width: 60px;
-        height: 1px;
-    }
-
-    .tituloHero {
-        font-size: 30px;
-    }
-
-    .urgenciasFlex,
-    .bannerAdoptaFlex {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .botonLlamar,
-    .botonAdopta {
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* Centrar títulos y óvalos en celular para que no se vean raros con el fondo */
-    .cabeceraSeccion {
-        text-align: center;
-    }
-
-    .cabeceraSeccion .subtituloSeccion {
-        margin: 0 auto;
-    }
-
-    .fraseDoctora {
-        position: static;
-        max-width: none;
-        margin-top: 16px;
-    }
-
-    .ubicacion .ladoIzq {
-        padding: 25px 18px;
-    }
-}
-
 .hero .botones,
 .hero .cajaDatos {
     justify-content: flex-end;
@@ -791,19 +731,185 @@ Secciones con fondo de patitas */
     background-color: rgba(255, 255, 255, 0.48);
 }
 
+/* Celulares */
 @media (max-width: 767px) {
+
+    .cajasServicios,
+    .cajasBlog {
+        grid-template-columns: 1fr;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cajasNumeros {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero en celulares */
+    .hero {
+        padding: 40px 0 50px;
+        min-height: auto;
+    }
+
     .videoFondoHero {
         object-position: 65% center;
     }
 
     .hero .ladoIzq {
-        width: 70%;
-        max-width: 320px;
-    }
-
-    .hero .cajaDatos {
         width: 100%;
         max-width: 100%;
-        margin-left: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero .etiqueta {
+        margin: 0 auto 14px;
+        display: inline-block;
+    }
+
+    .tituloHero {
+        font-size: 28px;
+        line-height: 1.25;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .parrafoHero {
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 auto 24px;
+        max-width: 95%;
+    }
+
+    .hero .botones {
+        justify-content: center;
+        gap: 12px;
+        max-width: 320px;
+        margin: 0 auto 28px;
+    }
+
+    .hero .boton,
+    .hero .botonSecundario {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Estadísticas del Hero en celular (100% transparentes) */
+    .hero .cajaDatos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .hero .dato {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        text-align: center;
+        flex: 1;
+    }
+
+    .hero .dato strong {
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-bottom: 2px;
+        display: block;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    .hero .dato span {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.82);
+        line-height: 1.25;
+        display: block;
+    }
+
+    .hero .linea {
+        display: block;
+        width: 1px;
+        height: 26px;
+        background-color: rgba(255, 255, 255, 0.45);
+        flex-shrink: 0;
+    }
+
+    /* Banners de urgencias y adopción */
+    .urgenciasFlex,
+    .bannerAdoptaFlex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .botonLlamar,
+    .botonAdopta {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Centrar títulos y óvalos en celular para que no se vean raros con el fondo */
+    .cabeceraSeccion {
+        text-align: center;
+    }
+
+    .cabeceraSeccion .etiqueta {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cabeceraSeccion .subtituloSeccion {
+        margin: 0 auto;
+    }
+
+    /* Sección Quién Es / Filosofía en celular */
+    .quienEs .ladoIzq {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .fotoDoctora {
+        height: 270px;
+        object-fit: cover;
+        object-position: center 20%;
+    }
+
+    .quienEs .ladoDer {
+        text-align: center;
+    }
+
+    .quienEs .etiqueta {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .quienEs .cajasNumeros {
+        justify-content: center;
+    }
+
+    .quienEs .botonSecundario {
+        margin: 0 auto;
+        display: inline-flex;
+    }
+
+    .fraseDoctora {
+        position: static;
+        max-width: none;
+        margin-top: 16px;
+    }
+
+    .ubicacion .ladoIzq {
+        padding: 25px 18px;
     }
 }
