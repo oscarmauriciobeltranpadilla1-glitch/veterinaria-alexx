@@ -74,12 +74,15 @@
     flex: 1;
 }
 
-.quienesImagen img {
+.quienesImagen img,
+.quienesImagen video {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 10px 28px rgba(7, 87, 158, 0.1);
     object-fit: cover;
     max-height: 380px;
+    display: block;
+    background-color: #000000;
 }
 
 /* Sección de Estadísticas */
@@ -108,58 +111,100 @@
     color: #E2E8F0;
 }
 
-/* Sección Valores */
-.seccionValores {
-    padding: 70px 0;
+/* Sección Equipo Médico (Fondo con patitas) */
+.seccionEquipo {
     background-color: #FFFFFF;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url("./assets/img/paticas.jpg");
+    background-size: 100% 100%, 620px auto;
+    background-position: center, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 70px 0 80px;
 }
 
-.tituloValores {
+.cabeceraSeccionEquipo {
     text-align: center;
-    font-size: 32px;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.tituloEquipo {
+    font-size: 34px;
     color: var(--azul);
-    margin-bottom: 40px;
     font-family: 'Outfit', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-.valoresGrid {
+.subtituloEquipo {
+    font-size: 16px;
+    color: var(--gris);
+    line-height: 1.5;
+}
+
+.equipoGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.valorCard {
-    background-color: #FAFDFD;
+.doctorCard {
+    background-color: #FFFFFF;
     border: 1px solid var(--borde);
-    border-radius: 16px;
-    padding: 28px 20px;
-    text-align: center;
-    box-shadow: 0 8px 24px rgba(7, 87, 158, 0.05);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(7, 87, 158, 0.08);
+    display: flex;
+    flex-direction: column;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.valorCard:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(7, 87, 158, 0.1);
+.doctorCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(7, 87, 158, 0.13);
 }
 
-.iconoValor {
-    font-size: 36px;
+.videoWrapper {
+    width: 100%;
+    height: 220px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.videoDoctor {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    margin-bottom: 12px;
 }
 
-.valorCard h3 {
-    font-size: 18px;
-    color: var(--azul);
+.doctorInfo {
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.especialidadDoctor {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--turquesa);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     margin-bottom: 8px;
-    font-family: 'Outfit', sans-serif;
+    display: block;
 }
 
-.valorCard p {
+.doctorInfo h3 {
+    font-size: 20px;
+    color: var(--azul);
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 8px;
+}
+
+.descDoctor {
     font-size: 14px;
     color: var(--gris);
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Banner Call to Action */
@@ -212,10 +257,23 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .equipoGrid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+    }
 }
 
 @media (max-width: 767px) {
-    .titulo, .tituloValores, .quienesTexto h2, .ctaContenido h2 {
+    .titulo, .tituloEquipo, .quienesTexto h2, .ctaContenido h2 {
         font-size: 26px;
+    }
+
+    .equipoGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .videoWrapper {
+        height: 200px;
     }
 }
