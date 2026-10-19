@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa de Adopción | Patas Felices</title>
 
-    <!-- Fuentes de Googleeeeegi -->
+    <!-- Fuentes de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Estilos (Asegúrate de que adopta.css esté en la misma carpeta que este archivo HTML) -->
+    <!-- Hojas de Estilos Vinculadas Correctamente -->
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="adopta.css">
 </head>
 
@@ -19,14 +20,14 @@
     <div class="barra">
         <div class="barraContenido">
             <a href="index.html" class="logo">
-                <img src="assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogo">
+                <img src="./assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogo">
                 <div class="textoLogo">
                     <span class="nombreLogo">Patas Felices</span>
                     <span class="esloganLogo">Su bienestar, nuestra prioridad</span>
                 </div>
             </a>
 
-            <!-- Botón del menú en celular -->
+            <!-- Botón del menú móvil -->
             <input type="checkbox" id="menu" class="menuCheck">
             <label for="menu" class="hamburguesa" aria-label="Abrir menú">☰</label>
 
@@ -37,14 +38,14 @@
                 <div class="submenu">
                     <a href="servicios.html">Servicios ▾</a>
                     <div class="submenuLista">
-                        <a href="servicios.html">Urgencias 24h</a>
-                        <a href="servicios.html">Consulta General</a>
-                        <a href="servicios.html">Vacunación</a>
-                        <a href="servicios.html">Esterilización</a>
-                        <a href="servicios.html">Cirugía</a>
-                        <a href="servicios.html">Peluquería</a>
-                        <a href="servicios.html">Hospitalización</a>
-                        <a href="servicios.html">Laboratorio</a>
+                        <a href="servicios.html#consulta">Consulta General</a>
+                        <a href="servicios.html#vacunacion">Vacunación</a>
+                        <a href="servicios.html#esterilizacion">Esterilización</a>
+                        <a href="servicios.html#cirugia">Cirugía</a>
+                        <a href="servicios.html#urgencias">Urgencias 24h</a>
+                        <a href="servicios.html#peluqueria">Peluquería</a>
+                        <a href="servicios.html#hospitalizacion">Hospitalización</a>
+                        <a href="servicios.html#laboratorio">Laboratorio</a>
                     </div>
                 </div>
 
@@ -70,7 +71,7 @@
             <span class="etiqueta">Adopción Responsable</span>
             <h1 class="titulo">Dale un Hogar Lleno de Amor a un Peludito 🐾</h1>
             <p class="parrafo">
-                Ellos pasaron por momentos difíciles, pero ahora solo buscan una familia que los amé para siempre. 
+                Ellos pasaron por momentos difíciles, pero ahora solo buscan una familia que los ame para siempre. 
                 Conoce a nuestras mascotas rescatadas listas para adopción.
             </p>
         </div>
@@ -189,7 +190,7 @@
         <div class="contenedor pieGrid">
             <div>
                 <div class="logoPie">
-                    <img src="assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogoPie">
+                    <img src="./assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogoPie">
                     <span class="nombreLogoPie">Patas Felices</span>
                 </div>
                 <p class="textoPie">Clínica Veterinaria comprometida con la salud, ética y el bienestar integral de perros, gatos y especies exóticas.</p>
@@ -210,11 +211,11 @@
             <div>
                 <h4 class="subtituloPie">Servicios Médicos</h4>
                 <ul class="linksPie">
-                    <li><a href="servicios.html">Consulta General</a></li>
-                    <li><a href="servicios.html">Vacunación & Desparasitación</a></li>
-                    <li><a href="servicios.html">Cirugías & Esterilización</a></li>
-                    <li><a href="servicios.html">Urgencias Médicas 24h</a></li>
-                    <li><a href="servicios.html">Laboratorio Clínico</a></li>
+                    <li><a href="servicios.html#consulta">Consulta General</a></li>
+                    <li><a href="servicios.html#vacunacion">Vacunación & Desparasitación</a></li>
+                    <li><a href="servicios.html#cirugia">Cirugías & Esterilización</a></li>
+                    <li><a href="servicios.html#urgencias">Urgencias Médicas 24h</a></li>
+                    <li><a href="servicios.html#laboratorio">Laboratorio Clínico</a></li>
                 </ul>
             </div>
 
@@ -235,11 +236,11 @@
         </div>
     </div>
 
-    <!-- Botón Flotante de WhatsApp -->
+    <!-- Botón de WhatsApp -->
     <a href="https://wa.me/573001234567?text=Hola,%20quisiera%20información%20sobre%20el%20programa%20de%20adopción"
         class="botonWhatsapp" target="_blank" rel="noopener noreferrer" title="Escríbenos a WhatsApp"
         aria-label="Contactar por WhatsApp">
-        <img src="assets/img/whatsapp.png" class="iconoWhatsapp" alt="WhatsApp">
+        <img src="./assets/img/whatsapp.png" class="iconoWhatsapp" alt="WhatsApp">
     </a>
 
 </body>
