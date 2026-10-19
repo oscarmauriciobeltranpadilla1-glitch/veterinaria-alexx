@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Adopción | Patas Felices</title>
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./adopta.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="barra">
+        <div class="barraContenido">
+            <a href="index.html" class="logo">
+                <img src="./assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogo">
+                <div class="textoLogo">
+                    <span class="nombreLogo">Patas Felices</span>
+                    <span class="esloganLogo">Su bienestar, nuestra prioridad</span>
+                </div>
+            </a>
+
+            <!-- Botón del menú en celular -->
+            <input type="checkbox" id="menu" class="menuCheck">
+            <label for="menu" class="hamburguesa" aria-label="Abrir menú">☰</label>
+
+            <div class="links">
+                <a href="index.html">Inicio</a>
+
+                <!-- Submenú de servicios -->
+                <div class="submenu">
+                    <a href="servicios.html">Servicios ▾</a>
+                    <div class="submenuLista">
+                        <a href="servicios.html#urgencias">Urgencias 24h</a>
+                        <a href="servicios.html#consulta">Consulta General</a>
+                        <a href="servicios.html#vacunacion">Vacunación</a>
+                        <a href="servicios.html#esterilizacion">Esterilización</a>
+                        <a href="servicios.html#cirugia">Cirugía</a>
+                        <a href="servicios.html#peluqueria">Peluquería</a>
+                        <a href="servicios.html#hospitalizacion">Hospitalización</a>
+                        <a href="servicios.html#laboratorio">Laboratorio</a>
+                    </div>
+                </div>
+
+                <a href="conocenos.html">Nosotros</a>
+                <a href="adopta.html" class="activo">Adopta</a>
+                <a href="citas.html">Agendar Cita</a>
+            </div>
+
+            <!-- Botón de urgencias -->
+            <a href="tel:+573001234567" class="botonUrgencias">
+                <span class="puntoRojo"></span>
+                <span class="textoUrgencia">
+                    <small>Urgencias 24h</small>
+                    <strong>(300) 123-4567</strong>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Encabezado Principal -->
+    <div class="cabeceraAdopta">
+        <div class="contenedor">
+            <span class="etiqueta">Adopción Responsable</span>
+            <h1 class="titulo">Dale un Hogar Lleno de Amor a un Peludito 🐾</h1>
+            <p class="parrafo">
+                Ellos pasaron por momentos difíciles, pero ahora solo buscan una familia que los amé para siempre. 
+                Conoce a nuestras mascotas rescatadas listas para adopción.
+            </p>
+        </div>
+    </div>
+
+    <!-- Sección de Mascotas en Adopción -->
+    <div class="seccionAdopcion">
+        <div class="contenedor">
+
+            <div class="gridMascotas">
+
+                <!-- Mascota 1 -->
+                <div class="mascotaCard">
+                    <div class="imagenMascota">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80" alt="Cachorro Tobby">
+                        <span class="badgeEspecie">🐶 Perro</span>
+                    </div>
+                    <div class="mascotaInfo">
+                        <h3>Tobby</h3>
+                        <span class="subDetalle">1 año • Macho • Mediano</span>
+                        <p>Tobby es un cachorro muy activo, alegre y juguetón. Le encanta correr en el parque y convive muy bien con otros perros.</p>
+                        <div class="caracteristicas">
+                            <span class="tag">Vacunado</span>
+                            <span class="tag">Desparasitado</span>
+                            <span class="tag">Esterilizado</span>
+                        </div>
+                        <a href="https://wa.me/573001234567?text=Hola,%20estoy%20interesado%20en%20adoptar%20a%20Tobby" target="_blank" class="botonAdoptar">
+                            Quiero Adoptar a Tobby 💬
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mascota 2 -->
+                <div class="mascotaCard">
+                    <div class="imagenMascota">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Gata Luna">
+                        <span class="badgeEspecie">🐱 Gato</span>
+                    </div>
+                    <div class="mascotaInfo">
+                        <h3>Luna</h3>
+                        <span class="subDetalle">8 meses • Hembra</span>
+                        <p>Luna es una gatita sumamente tierna, tranquila y regalona. Adora dormir en las piernas y buscar caricias todo el día.</p>
+                        <div class="caracteristicas">
+                            <span class="tag">Vacunada</span>
+                            <span class="tag">Negativa a FIV/FELV</span>
+                            <span class="tag">Esterilizada</span>
+                        </div>
+                        <a href="https://wa.me/573001234567?text=Hola,%20estoy%20interesado%20en%20adoptar%20a%20Luna" target="_blank" class="botonAdoptar">
+                            Quiero Adoptar a Luna 💬
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mascota 3 -->
+                <div class="mascotaCard">
+                    <div class="imagenMascota">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=600&q=80" alt="Perro Rocky">
+                        <span class="badgeEspecie">🐶 Perro</span>
+                    </div>
+                    <div class="mascotaInfo">
+                        <h3>Rocky</h3>
+                        <span class="subDetalle">3 años • Macho • Grande</span>
+                        <p>Rocky es un protector leal, noble y muy inteligente. Ideal para casas con patio grande. Es sumamente obediente y fiel.</p>
+                        <div class="caracteristicas">
+                            <span class="tag">Vacunado</span>
+                            <span class="tag">Entrenado básico</span>
+                            <span class="tag">Castrado</span>
+                        </div>
+                        <a href="https://wa.me/573001234567?text=Hola,%20estoy%20interesado%20en%20adoptar%20a%20Rocky" target="_blank" class="botonAdoptar">
+                            Quiero Adoptar a Rocky 💬
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sección Requisitos -->
+    <div class="seccionRequisitos">
+        <div class="contenedor">
+            <h2 class="tituloSeccion">Requisitos para Adoptar con Nosotros</h2>
+            <p class="subtituloSeccion">Garantizamos que cada mascota llegue a un hogar seguro, responsable y lleno de amor.</p>
+
+            <div class="requisitosGrid">
+                <div class="requisitoCard">
+                    <span class="iconoReq">📄</span>
+                    <h3>Documento de Identidad</h3>
+                    <p>Presentar copia de cédula de ciudadanía y comprobante de residencia actual.</p>
+                </div>
+
+                <div class="requisitoCard">
+                    <span class="iconoReq">🏡</span>
+                    <h3>Espacio Adecuado</h3>
+                    <p>Contar con un hogar seguro, libre de peligros y protegido para evitar escapes o maltrato.</p>
+                </div>
+
+                <div class="requisitoCard">
+                    <span class="iconoReq">🤝</span>
+                    <h3>Entrevista Previa</h3>
+                    <p>Conversar con nuestro equipo para evaluar el perfil de la familia y la mascota ideal.</p>
+                </div>
+
+                <div class="requisitoCard">
+                    <span class="iconoReq">❤️</span>
+                    <h3>Compromiso de Por Vida</h3>
+                    <p>Asumir la responsabilidad económica, médica y afectiva durante toda la vida del animal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="pie">
+        <div class="contenedor pieGrid">
+            <div>
+                <div class="logoPie">
+                    <img src="./assets/img/logo-icono.png" alt="Logo Patas Felices" class="fotoLogoPie">
+                    <span class="nombreLogoPie">Patas Felices</span>
+                </div>
+                <p class="textoPie">Clínica Veterinaria comprometida con la salud, ética y el bienestar integral de perros, gatos y especies exóticas.</p>
+                <p class="textoPie"><em>«Su bienestar, nuestra prioridad»</em></p>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Enlaces Rápidos</h4>
+                <ul class="linksPie">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Todos los Servicios</a></li>
+                    <li><a href="conocenos.html">Equipo Médico</a></li>
+                    <li><a href="adopta.html">Programa de Adopción</a></li>
+                    <li><a href="citas.html">Agendar Cita</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Servicios Médicos</h4>
+                <ul class="linksPie">
+                    <li><a href="servicios.html#consulta">Consulta General</a></li>
+                    <li><a href="servicios.html#vacunacion">Vacunación & Desparasitación</a></li>
+                    <li><a href="servicios.html#cirugia">Cirugías & Esterilización</a></li>
+                    <li><a href="servicios.html#urgencias">Urgencias Médicas 24h</a></li>
+                    <li><a href="servicios.html#laboratorio">Laboratorio Clínico</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="subtituloPie">Contacto & Urgencias</h4>
+                <p class="textoPie">📞 <strong>Urgencias 24h:</strong> (300) 123-4567</p>
+                <p class="textoPie">💬 <strong>WhatsApp:</strong> +57 300 987 6543</p>
+                <p class="textoPie">✉️ <strong>Correo:</strong> contacto@patasfelicesvet.com</p>
+                <p class="textoPie">📍 <strong>Dirección:</strong> Av. Principal # 45-88</p>
+            </div>
+        </div>
+
+        <div class="pieInferior">
+            <div class="contenedor pieInferiorFlex">
+                <p>© 2026 Clínica Veterinaria Patas Felices. Todos los derechos reservados.</p>
+                <p>Dra. Andrea Castillo — Tarjeta Profesional Veterinaria No. 45892-COL</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/573001234567?text=Hola,%20quisiera%20información%20sobre%20el%20programa%20de%20adopción"
+        class="botonWhatsapp" target="_blank" rel="noopener noreferrer" title="Escríbenos a WhatsApp"
+        aria-label="Contactar por WhatsApp">
+        <img src="./assets/img/whatsapp.png" class="iconoWhatsapp" alt="WhatsApp">
+    </a>
+
+</body>
+
+</html>
